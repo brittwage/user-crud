@@ -10,4 +10,5 @@ class User < ActiveRecord::Base
   :role_ids, :first_name, :last_name
   # attr_accessible :title, :body
   validates :email, :uniqueness => true
+  validates :first_name, :presence => true
 end
