@@ -54,7 +54,7 @@
     </div>
   </div>
 
-  <%# if can? :manage, User %>
+  <% if can? :manage, User %>
     <div class="field">
       <%= f.label :roles %>
       <div class="controls">
@@ -64,7 +64,7 @@
         <% end %>
       </div>
     </div>
-  <%# end %>
+  <% end %>
 
   <div class="actions">
     <%= f.submit %>
